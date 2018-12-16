@@ -1,82 +1,87 @@
 /*
 	*UPDATED 12/9/2018 Changed the menu from html table to css navbar
+	*UPDATED 12/15/2018 adjust navbar appearance to be rounded, shadowed and content underlined
 */
 
 /* Navbar container */
 .navbar 
 {
-  overflow: auto;
-  background-color: darkgreen;
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;;
+  border-radius:25px;
+  overflow:auto;
+  background-color:darkgreen;
+  font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;;
 }
 
 /* Links inside the navbar */
 .navbar a 
 {
-  float: left;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  border-radius:25px;
+  float:left;
+  font-size:20px;
+  color:white;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
 }
 
 /* The dropdown container */
 .dropdown 
 {
-  float: left;
-  overflow: hidden;
+  border-radius:25px;
+  float:left;
+  overflow:auto;
 }
 
 /* Dropdown button */
-.dropdown .dropbtn 
+.dropdown .dropdownbutton 
 {
-  font-size: 20px; 
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-size:20px; 
+  border:none;
+  outline:none;
+  color:white;
+  padding:14px 16px;
+  background-color:inherit;
+  font-family:inherit; /* Important for vertical align on mobile phones */
+  margin:0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn 
+/* Add a different background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropdownbutton 
 {
-  background-color: red;
+  background-color:#021a40;
 }
 
 /* Dropdown content (hidden by default) */
-.dropdown-content 
+.dropdown_content 
 {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  border-radius:25px;
+  display:none;
+  position:absolute;
+  background-color:#021a40;
+  min-width:160px;
+  box-shadow:16px 8px 20px 0px darkgreen;
+  z-index:1;
 }
 
 /* Links inside the dropdown */
-.dropdown-content a 
+.dropdown_content a 
 {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+  float:none;
+  color:white;
+  padding:12px 16px;
+  text-decoration:underline darkgreen;
+  display:block;
+  text-align:left;
 }
 
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover 
+/* Add different background color to dropdown links on hover */
+.dropdown_content a:hover 
 {
-  background-color: #ddd;
+  background-color:darkgreen;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content 
+.dropdown:hover .dropdown_content 
 {
   display: block;
 }
